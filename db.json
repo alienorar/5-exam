@@ -1,0 +1,57 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Juliet Oma",
+      "age": "julie@yahoo.com",
+      "phone": "08100000000",
+      "group": "React js bootcamp N11 "
+    },
+    {
+      "id": "2",
+      "name": "James Williams",
+      "email": "jameswilly@gmail.com",
+      "number": "08111111111"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "65fh78",
+      "name": "James Williams",
+      "course": "frontend"
+    },
+    {
+      "id": "6er578",
+      "name": "Max Uit",
+      "course": "Bootcamp"
+    },
+    {
+      "name": "Raykhonaaa",
+      "course": "Standard",
+      "id": "d200"
+    }
+  ],
+  "course": [
+    {
+      "id": "i393",
+      "name": "Standard",
+      "course": "frontend",
+      "duration": "8 oy",
+      "price": "200$"
+    },
+    {
+      "id": "i393",
+      "name": "Bootcamp",
+      "course": "frontend",
+      "duration": "8 oy",
+      "price": "200$"
+    }
+  ],
+  "group": [
+    {
+      "id": "6478",
+      "name": "Angular js Bootcamp",
+      "course": "frontend"
+    }
+  ]
+}
