@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div>
       <Header/>
-      <ModelX onSlideChange={setActiveSlide} />
+      <ModelX onSlideChange={setActiveSlide} activeSlide={activeSlide}/>
       <Footer activeSlide={activeSlide} />
     </div>
   );

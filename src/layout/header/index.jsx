@@ -1,11 +1,7 @@
-// import React from 'react';
+
 import { AppBar } from '@mui/material';
 import Toolbar from '@mui/material/Toolbar';
 import { styled, alpha } from '@mui/material/styles';
-// import IconButton from '@mui/material/IconButton';
-// import MenuIcon from '@mui/icons-material/Menu';
-// import Typography from '@mui/material/Typography';
-// import { Search } from '@mui/icons-material';
 import { NavLink } from 'react-router-dom';
 import SearchIcon from '@mui/icons-material/Search';
 import InputBase from '@mui/material/InputBase';
@@ -43,7 +39,6 @@ const Header = () => {
         color: 'inherit',
         '& .MuiInputBase-input': {
             padding: theme.spacing(1, 1, 1, 0),
-            //  vertical padding + font size from searchIcon
             paddingLeft: `calc(1em + ${theme.spacing(4)})`,
             transition: theme.transitions.create('width'),
             width: '100%',
@@ -67,36 +62,37 @@ const Header = () => {
                     </div>
                     <nav className='hidden lg:block'>
                         <div className='flex gap-4 items-center'>
-                            <NavLink to="/model-y">
+                            <NavLink to="/main-page/model-s">
                                 <div className='border-[2px] border-transparent hover:border-blue rounded-full px-2 py-1 hover:text-blue transition duration-150 ease-linear'>
                                     Model S
                                 </div>
                             </NavLink>
-                            <NavLink>
+                            <NavLink to="/main-page/model-rd">
                                 <div className='border-[2px] border-transparent hover:border-red-700 rounded-full px-2 py-1 hover:text-red-700 transition duration-150 ease-linear'>
                                     Model 3
                                 </div>
                             </NavLink>
+                            <NavLink to="/main-page/model-x">
+                                <div className='border-[2px] border-transparent hover:border-white rounded-full px-2 py-1 hover:text-white transition duration-150 ease-linear'>
+                                    Model X
+                                </div>
+                            </NavLink>
+                            <NavLink to="/main-page/model-y">
+                                <div className='border-[2px] border-transparent hover:border-white rounded-full px-2 py-1 hover:text-white transition duration-150 ease-linear'>
+                                    Model Y
+                                </div>
+                            </NavLink>
+                            <NavLink to="*">
+                                <div className='border-[2px] border-transparent hover:border-white rounded-full px-2 py-1 hover:text-white transition duration-150 ease-linear'>
+                                    Solar roof
+                                </div>
+                            </NavLink>
                             <NavLink>
                                 <div className='border-[2px] border-transparent hover:border-white rounded-full px-2 py-1 hover:text-white transition duration-150 ease-linear'>
-                                    Model x
+                                    Panels
                                 </div>
                             </NavLink>
-                            <NavLink>
-                                <div className='border-[2px] border-transparent hover:border-white rounded-full px-2 py-1 hover:text-white transition duration-150 ease-linear'>
-                                    Model y
-                                </div>
-                            </NavLink>
-                            <NavLink>
-                                <div className='border-[2px] border-transparent hover:border-blue rounded-full px-2 py-1 hover:text-blue transition duration-150 ease-linear'>
-                                    Solar Roof
-                                </div>
-                            </NavLink>
-                            <NavLink>
-                                <div className='border-[2px] border-transparent hover:border-blue rounded-full px-2 py-1 hover:text-blue transition duration-150 ease-linear'>
-                                    Solar Panels
-                                </div>
-                            </NavLink>
+
                         </div>
                     </nav>
                     <div className='flex gap-2 items-center'>
@@ -123,39 +119,3 @@ const Header = () => {
 
 export default Header;
 
-
-// const Header = ({ activeSlide }) => {
-//     const links = ['Model S', 'Model 3', 'Model X', 'Model Y'];
-
-//     const getActiveClass = (index) => {
-//         return index === activeSlide ? 'text-blue' : 'text-white'; // Active link gets 'text-blue'
-//     };
-
-//     return (
-//         <AppBar position="sticky" sx={{ backgroundColor: "transparent" }} className='flex justify-between'>
-//             <Toolbar>
-//                 <div className='flex justify-between w-full p-2 items-center gap-4'>
-//                     <div>
-//                         <img src={MainLogo} alt="main-logo" />
-//                     </div>
-//                     <nav className='hidden lg:block'>
-//                         <div className='flex gap-4 items-center'>
-//                             {links.map((link, index) => (
-//                                 <NavLink to={`/${link.toLowerCase().replace(' ', '-')}`} key={index}>
-//                                     <div className={`border-[2px] border-transparent hover:border-blue rounded-full px-2 py-1 ${getActiveClass(index)} transition duration-150 ease-linear`}>
-//                                         {link}
-//                                     </div>
-//                                 </NavLink>
-//                             ))}
-//                         </div>
-//                     </nav>
-//                     <div className='flex gap-2 items-center'>
-//                         {/* Other toolbar content */}
-//                     </div>
-//                 </div>
-//             </Toolbar>
-//         </AppBar>
-//     );
-// };
-
-// export default Header;

@@ -30,7 +30,7 @@ const index = () => {
       console.log(response);
 
       if (response.status === 201) {
-        navigate("/category")
+        navigate("/main-page")
       }
     } catch (error) {
       console.log(error);
@@ -83,7 +83,7 @@ const index = () => {
                     />
                   }
                 />
-                <Button variant="contained" color="primary" type="submit" form="sign-in" sx={{ marginTop: "10px", maxWidth: "160px" }} >
+                <Button variant="contained" color="secondary" type="submit" form="sign-in" sx={{ marginTop: "10px", maxWidth: "160px" }} >
                   Submit
                 </Button>
               </Form>

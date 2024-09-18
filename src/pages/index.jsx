@@ -4,11 +4,15 @@ import MainPage from './main-page'
 import HeaderLinks from './header-links'
 import ModelX from './model-x'
 import ModelY from './model-y'
-export{
-SignIn,
-SignUp,
-MainPage,
-HeaderLinks,
-ModelX,
-ModelY
+import ModelS from './model-s'
+import ModelRd from './model-3rd'
+export {
+    SignIn,
+    SignUp,
+    MainPage,
+    HeaderLinks,
+    ModelX,
+    ModelY,
+    ModelS,
+    ModelRd
 }

@@ -5,20 +5,11 @@ import MenuItem from '@mui/material/MenuItem';
 import MenuIcon from '@mui/icons-material/Menu';
 
 const options = [
-    'None',
-    'Atria',
-    'Callisto',
-    'Dione',
-    'Ganymede',
-    'Hangouts Call',
-    'Luna',
-    'Oberon',
-    'Phobos',
-    'Pyxis',
-    'Sedna',
-    'Titania',
-    'Triton',
-    'Umbriel',
+    'Model-x',
+    'Model-s',
+    'Model-y',
+    'Solar Roof',
+    'Solar Panels',
 ];
 
 const ITEM_HEIGHT = 48;
@@ -26,9 +17,11 @@ const ITEM_HEIGHT = 48;
 export default function LongMenu() {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
+
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
     };
+
     const handleClose = () => {
         setAnchorEl(null);
     };
@@ -55,17 +48,36 @@ export default function LongMenu() {
                 anchorEl={anchorEl}
                 open={open}
                 onClose={handleClose}
-                slotProps={{
-                    paper: {
-                        style: {
-                            maxHeight: ITEM_HEIGHT * 4.5,
-                            width: '20ch',
-                        },
+                PaperProps={{
+                    style: {
+                        height: '100vh',       
+                        width: '60vw',         
+                        margin: 0,              
+                        top: 0,                  
+                        left: 0,                 
+                        right: 0,                 
+                        display: 'flex',         
+                        flexDirection: 'column', 
+                        justifyContent: 'center', 
+                        alignItems: 'center',
+                        backdropFilter: 'blur(10px)',
+                        backgroundColor: 'rgba(0, 0, 0, 0.6)', 
                     },
                 }}
+                anchorReference="none"
+                disableAutoFocusItem
             >
                 {options.map((option) => (
-                    <MenuItem key={option} selected={option === 'Pyxis'} onClick={handleClose}>
+                    <MenuItem
+                        key={option}
+                        selected={option === 'Pyxis'}
+                        onClick={handleClose}
+                        style={{
+                            color: 'white',
+                            fontSize: '1.25rem',
+                            textAlign: 'center',
+                        }}
+                    >
                         {option}
                     </MenuItem>
                 ))}

@@ -46,7 +46,7 @@ const index = () => {
             <div className="container d-flex justify-content-center align-items-center mt-5 p-5 ">
                 <div className="card w-25">
                     <div className="card-header">
-                        <Typography variant="h4" component="h2" sx={{ textAlign: "center" }} className="text-blue">
+                        <Typography variant="h4" component="h2" sx={{ textAlign: "center" }} className="text-dark">
                             Sign up
                         </Typography>
                     </div>
@@ -132,7 +132,7 @@ const index = () => {
                                         />
                                     }
                                 />
-                                <Button variant="contained" color="primary" type="submit" form="sign-in" sx={{ marginTop: "10px", maxWidth: "160px" }} >
+                                <Button variant="contained" color="secondary" type="submit" form="sign-in" sx={{ marginTop: "10px", maxWidth: "160px" }} >
                                     Submit
                                 </Button>
                             </Form>
@@ -140,7 +140,7 @@ const index = () => {
 
                         <Typography variant="body2" align="center" sx={{ marginTop: "20px", }} />
                         Already have an account?
-                        <NavLink to="/sign-in" style={{ textDecoration: 'none', color: '#1976d2', fontWeight: 'bold', marginLeft: "10px" }}>
+                        <NavLink to="/sign-in" style={{ textDecoration: 'none', color: 'secondary', fontWeight: 'bold', marginLeft: "10px" }}>
                             Sign In
                         </NavLink>
 
