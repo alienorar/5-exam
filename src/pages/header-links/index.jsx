@@ -79,7 +79,7 @@ export default function LongMenu() {
                         }}
                     >
                         {option}
-                    </MenuItem>
+                                            </MenuItem>
                 ))}
             </Menu>
         </div>
